@@ -3,7 +3,7 @@ const { Schema, default: mongoose } = require("mongoose");
 
 const topicSchema = new Schema(
     {
-       topic: String,
+       title: String,
        description: String,
     } ,
     {
