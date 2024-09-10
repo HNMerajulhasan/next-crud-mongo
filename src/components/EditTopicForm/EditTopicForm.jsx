@@ -22,8 +22,8 @@ const EditTopicForm = ({ id, title, description }) => {
           "content-type": "application/json"
         },
         body: JSON.stringify({
-          title: newTitle,
-          description: newDescription
+           newTitle,
+           newDescription
         })
       });
 
@@ -61,7 +61,7 @@ const EditTopicForm = ({ id, title, description }) => {
         </div>
 
         <div>
-          <button className='bg-cyan-700 text-[#fff] px-5 py-1'>
+          <button type='submit' className='bg-cyan-700 text-[#fff] px-5 py-1'>
             Update Topic
           </button>
         </div>
